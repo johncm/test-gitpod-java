@@ -1,1 +1,8 @@
-image: gitpod/workspace-java-17
+# https://www.gitpod.io/docs/references/gitpod-yml
+image: 
+  gitpod/workspace-java-17
+
+# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+  - init: javac *.java # runs during prebuild
+    command: echo 'run "java Simple"'
